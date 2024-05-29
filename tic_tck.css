@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(188, 234, 218);
+}
+nav{
+    height: 35px;
+    background-color: rgb(36, 23, 30);
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    text-justify: auto;
+}
+ .gamecontainer{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    display: grid;
+    margin-top: 30px;
+ }
+ 
+
+.game{
+    display : grid;
+    grid-template-columns : repeat(3 ,10vw);
+    grid-template-rows: repeat(3 ,10vw);
+    height: 30vw;
+    border: none;
+    margin-top: 30px;
+}
+
+.mark{
+    border: 2px solid black;
+    font-size: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mark:hover{
+    background-color: rgba(156, 215, 238, 0.524);
+}
+
+.bl-0{
+    border-left: 0;
+}
+.br-0{
+    border-right:0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+
+#reset{
+    background-color: black;
+    color: aqua;
+    margin-top: 30px;
+}
+.turnn{
+    font-size: 50px;
+    margin-top: 30px;
+}
+#reset:hover{
+    background-color: rgb(40, 107, 107);
+}
+
+
+@media screen and (max-width: 750px) {
+    .gamecontainer{
+        flex-wrap:wrap;
+        margin-top: 140px;
+    }
+    .info{
+        font-size: 26px;
+        margin-top: 40px
+    }
+    .boxtext{
+        font-size: 25px;
+    }
+    .game{
+        grid-template-columns : repeat(3 ,16vw);
+        grid-template-rows: repeat(3 ,14vw);
+    }
+}
